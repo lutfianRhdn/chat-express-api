@@ -7,7 +7,7 @@ const morgan = require("morgan");
 require("dotenv").config();
 require("./config/database");
 
-app.use(morgan);
+app.use(morgan("tiny"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/api", route);
