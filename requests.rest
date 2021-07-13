@@ -1,0 +1,23 @@
+
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+     "name": "name",
+     "email": "name@example.com",
+     "password": "password",
+     "phone": "0112312193"
+}
+###
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+     "email": "name@example.com",
+     "password":"passwords"
+}
+
+
+###
+GET http://localhost:3000/api/users
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibmFtZSIsImVtYWlsIjoibmFtZUBleGFtcGxlLmNvbSIsImlhdCI6MTYyNjA5NDY4NX0.wOyZPHZIAsUs-n-esPEm9JZimAeeQwvzKdsS1LMt-10
